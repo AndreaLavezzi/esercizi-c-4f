@@ -1,0 +1,104 @@
+\hypertarget{struct_persona_8c}{}\doxysection{struct\+Persona.\+c File Reference}
+\label{struct_persona_8c}\index{structPersona.c@{structPersona.c}}
+
+
+The program asks to enter the name, the surname and the age of four people, then it tells the user which person is the oldest.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}
+\begin{DoxyCompactList}\small\item\em The struct \char`\"{}\+Person\+\_\+\+T\char`\"{} represents a person. It has a name, a surname and an age. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{struct_persona_8c_ac25189db92959bff3c6c2adf4c34b50a}{DIM}}~4
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}} \mbox{\hyperlink{struct_persona_8c_aa76aad60730e7b8e9eb3f3653d2e62d8}{add\+Person}} ()
+\begin{DoxyCompactList}\small\item\em The function \char`\"{}add\+Person()\char`\"{} asks the user to enter the name of the person, their surname and their age. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}} \mbox{\hyperlink{struct_persona_8c_acf0cd4bd054d8bbadde9bc2fb8fb1521}{find\+Oldest}} (\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}} people\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function \char`\"{}find\+Oldest\char`\"{} receives in input an array of variables which type is \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}, and finds which person has the higher age. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then it calls the find\+Oldest function to find the oldest person of the array, and tells the user which person is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The program asks to enter the name, the surname and the age of four people, then it tells the user which person is the oldest. 
+
+\begin{DoxyAuthor}{Author}
+Andrea Lavezzi 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+08/11/2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{struct_persona_8c_ac25189db92959bff3c6c2adf4c34b50a}\label{struct_persona_8c_ac25189db92959bff3c6c2adf4c34b50a}} 
+\index{structPersona.c@{structPersona.c}!DIM@{DIM}}
+\index{DIM@{DIM}!structPersona.c@{structPersona.c}}
+\doxysubsubsection{\texorpdfstring{DIM}{DIM}}
+{\footnotesize\ttfamily \#define DIM~4}
+
+
+\begin{DoxyParams}{Parameters}
+{\em DIM} & The dimension of the array of people. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{struct_persona_8c_aa76aad60730e7b8e9eb3f3653d2e62d8}\label{struct_persona_8c_aa76aad60730e7b8e9eb3f3653d2e62d8}} 
+\index{structPersona.c@{structPersona.c}!addPerson@{addPerson}}
+\index{addPerson@{addPerson}!structPersona.c@{structPersona.c}}
+\doxysubsubsection{\texorpdfstring{addPerson()}{addPerson()}}
+{\footnotesize\ttfamily add\+Person (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The function \char`\"{}add\+Person()\char`\"{} asks the user to enter the name of the person, their surname and their age. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}\+: The function returns a person 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_persona_8c_acf0cd4bd054d8bbadde9bc2fb8fb1521}\label{struct_persona_8c_acf0cd4bd054d8bbadde9bc2fb8fb1521}} 
+\index{structPersona.c@{structPersona.c}!findOldest@{findOldest}}
+\index{findOldest@{findOldest}!structPersona.c@{structPersona.c}}
+\doxysubsubsection{\texorpdfstring{findOldest()}{findOldest()}}
+{\footnotesize\ttfamily find\+Oldest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}}]{people\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+The function \char`\"{}find\+Oldest\char`\"{} receives in input an array of variables which type is \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}, and finds which person has the higher age. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}\+: The function returns the oldest person in the array 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}} & oldest\+: The oldest person of the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{structPersona.c@{structPersona.c}!main@{main}}
+\index{main@{main}!structPersona.c@{structPersona.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then it calls the find\+Oldest function to find the oldest person of the array, and tells the user which person is. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}} & oldest\+: The oldest person of the array \\
+\hline
+{\em people\mbox{[}\+DIM\mbox{]}} & An array of people, which size is defined by DIM \\
+\hline
+\end{DoxyParams}
