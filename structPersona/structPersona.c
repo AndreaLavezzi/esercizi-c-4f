@@ -44,22 +44,22 @@ Person_T addPerson(){
  * \brief The function "findOldest" receives in input an array of variables which type is Person_T, and finds which person has the higher age
  * \return Person_T: The function returns the oldest person in the array
  * \param Person_T oldest: The oldest person of the array
+ * \param Person_T person: The person we are comparing to the current oldest person
 */
 Person_T findOldest(Person_T people[]){
-    Person_T oldest;
-    for (int i = 0; i < DIM; i++)
-    {
-        if(i == 0){
-            oldest = people[i];
-        }else if(oldest.age < people[i].age){
-            oldest = people[i];
+    Person_T oldest = people[0];
+    Person_T person;
+    for(int i = 1; i < DIM; i++){
+        person = people[i];
+        if(oldest.age < person.age){
+            oldest = person;
         }
     }
     return oldest;
 }
 
 /**
- * \brief In the main function the program will call the addPerson function, DIM times, in order to populate an array of people. Then it calls the findOldest function to find the oldest person of the array, and tells the user which person is.
+ * \brief In the main function the program will call the addPerson function, DIM times, in order to populate an array of people. Then, it calls the findOldest function to find the oldest person of the array, and it tells the name and the surname of the oldest person
  * \param Person_T oldest: The oldest person of the array
  * \param people[DIM]: An array of people, which size is defined by DIM
 */

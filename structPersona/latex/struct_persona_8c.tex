@@ -25,7 +25,7 @@ struct \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}
 \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}} \mbox{\hyperlink{struct_persona_8c_acf0cd4bd054d8bbadde9bc2fb8fb1521}{find\+Oldest}} (\mbox{\hyperlink{struct_person___t}{Person\+\_\+T}} people\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em The function \char`\"{}find\+Oldest\char`\"{} receives in input an array of variables which type is \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}, and finds which person has the higher age. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
-\begin{DoxyCompactList}\small\item\em In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then it calls the find\+Oldest function to find the oldest person of the array, and tells the user which person is. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then, it calls the find\+Oldest function to find the oldest person of the array, and it tells the name and the surname of the oldest person. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -84,6 +84,8 @@ The function \char`\"{}find\+Oldest\char`\"{} receives in input an array of vari
 \begin{DoxyParams}{Parameters}
 {\em \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}} & oldest\+: The oldest person of the array \\
 \hline
+{\em \mbox{\hyperlink{struct_person___t}{Person\+\_\+T}}} & person\+: The person we are comparing to the current oldest person \\
+\hline
 \end{DoxyParams}
 \mbox{\Hypertarget{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{struct_persona_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
 \index{structPersona.c@{structPersona.c}!main@{main}}
@@ -93,7 +95,7 @@ The function \char`\"{}find\+Oldest\char`\"{} receives in input an array of vari
 
 
 
-In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then it calls the find\+Oldest function to find the oldest person of the array, and tells the user which person is. 
+In the main function the program will call the add\+Person function, DIM times, in order to populate an array of people. Then, it calls the find\+Oldest function to find the oldest person of the array, and it tells the name and the surname of the oldest person. 
 
 
 \begin{DoxyParams}{Parameters}
